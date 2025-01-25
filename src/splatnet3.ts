@@ -98,11 +98,12 @@ export class Splatnet3 {
       throw new Error("Session token is not set.");
     }
 
+    /* broken, lol, am just gonna switch gtokens manually, maybe automate the collection of them another time
     const { webServiceToken, userCountry, userLang } = await getGToken({
       fApi: state.fGen,
       sessionToken,
       env: this.env,
-    });
+    });*/
 
     const bulletToken = await getBulletToken({
       webServiceToken,
