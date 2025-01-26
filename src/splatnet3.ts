@@ -93,6 +93,7 @@ export class Splatnet3 {
   async fetchToken() {
     const state = this.profile.state;
     const sessionToken = state.loginState?.sessionToken;
+    const webServiceToken = state.loginState?.gToken;
 
     if (!sessionToken) {
       throw new Error("Session token is not set.");
