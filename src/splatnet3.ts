@@ -94,6 +94,8 @@ export class Splatnet3 {
     const state = this.profile.state;
     const sessionToken = state.loginState?.sessionToken;
     const webServiceToken = state.loginState?.gToken;
+    const userCountry = state.loginState?.userCountry;
+    const userLang = state.loginState?.userLang;
 
     if (!sessionToken) {
       throw new Error("Session token is not set.");
