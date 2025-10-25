@@ -86,6 +86,9 @@ class SplashcatAPI {
     const json = await resp.json().catch(() => ({}));
 
     if (resp.status !== 200) {
+      if (json.error === "battle already exists") {
+        return { status: "success", message: "Battle already exists" };
+      }
       throw new APIError({
         response: resp,
         message: "Failed to export battle",
