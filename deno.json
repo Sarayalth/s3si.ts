@@ -1,4 +1,5 @@
 {
+  "nodeModulesDir": "auto",
   "tasks": {
     "check": "deno check s3si.ts",
     "fmt": "deno fmt",
@@ -8,27 +9,21 @@
     "gen": "deno run -A ./scripts/update-constant.ts"
   },
   "fmt": {
-    "files": {
-      "exclude": [
-        "export/",
-        "cache/",
-        ".vscode/",
-        ".github/",
-        "profile.json",
-        "gui/"
-      ]
-    }
+    "exclude": [
+      "export/",
+      "cache/",
+      ".vscode/",
+      ".github/",
+      "profile.json"
+    ]
   },
   "lint": {
-    "files": {
-      "exclude": [
-        "export/",
-        "cache/",
-        ".vscode/",
-        ".github/",
-        "profile.json",
-        "gui/"
-      ]
-    }
+    "exclude": [
+      "export/",
+      "cache/",
+      ".vscode/",
+      ".github/",
+      "profile.json"
+    ]
   }
 }

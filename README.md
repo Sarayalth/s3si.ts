@@ -1,7 +1,6 @@
 # s3si.ts
 
 [![Build status](https://github.com/spacemeowx2/s3si.ts/workflows/Build/badge.svg)](https://github.com/spacemeowx2/s3si.ts/actions/workflows/ci.yaml)
-[![Constant check status](https://github.com/spacemeowx2/s3si.ts/workflows/Constant%20Check/badge.svg)](https://github.com/spacemeowx2/s3si.ts/actions/workflows/constant-check.yaml)
 
 Export your battles from SplatNet to stat.ink and Splashcat.
 
@@ -9,7 +8,7 @@ If you have used s3s, please see [here](#migrate-from-s3s).
 
 ## Usage
 
-1. Install [deno](https://deno.land/)
+1. Install [Deno 2](https://docs.deno.com/runtime/)
 
 2. Run
    `deno run -Ar https://raw.githubusercontent.com/spacemeowx2/s3si.ts/main/s3si.ts [options]`
@@ -26,8 +25,9 @@ Options:
                                  "auto" is the default setting.
     --no-progress, -n            Disable progress bar
     --monitor, -m                Monitor mode
-    --skip-mode <mode>, -s       Skip mode (default: null)
-                                 ("vs", "coop")
+    --skip-mode <mode>, -s       Skip mode (default: none)
+                                 Multiple modes to skip can be separated by commas
+                                 (e.g. "vs,coop,sideorder")
     --with-summary               Include summary in the output
     --help                       Show this help message and exit
     --nxapi-presence             Extends monitoring mode to use Nintendo Switch presence from nxapi
